@@ -1,0 +1,106 @@
+.contact {
+  margin-bottom: 0px;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--section-background);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.heading {
+  color: var(--main-color);
+  font-size: 50px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+.heading + p {
+  color: var(--secondary-color);
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+.phone {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 1rem;
+  margin-top: 3rem;
+}
+.lucide {
+  color: var(--main-color);
+}
+.formsection {
+}
+.formContainer {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
+
+.contact .specialHeading {
+  color: #ebeced;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin: 0;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 660px) {
+  .contact .specialHeading {
+    font-size: 50px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+
+  .heading + p {
+    font-size: 15px;
+  }
+
+  .phone {
+    font-size: 15px;
+  }
+}
+
+.formContainer label {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: var(--main-color);
+}
+
+.formContainer input[type="text"],
+.formContainer input[type="email"],
+.formContainer input[type="tel"],
+.formContainer input[type="date"],
+.formContainer select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.formContainer button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formContainer button[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}

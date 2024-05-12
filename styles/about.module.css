@@ -1,0 +1,111 @@
+.statistic {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+.statistic .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.statistic .stat {
+  padding: 20px;
+  text-align: center;
+}
+.statistic .stat h3 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 30px 0;
+  color: var(--main-color);
+}
+.statistic .stat p {
+  line-height: 1.8;
+  color: #777;
+  font-size: 1.5rem;
+}
+
+/*********certificates*********/
+.certificatesSection {
+  margin: auto;
+  margin-top: 5rem;
+}
+.certificatesGrid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  margin-bottom: 6rem;
+}
+
+.section1 .certificatesImage {
+  width: 40rem;
+}
+
+.section2 {
+  width: 100%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin-bottom: 6rem;
+}
+
+.certificates {
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  transition: 0.3s;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.section2 .certificatesImage {
+  width: 30rem;
+}
+
+.certificates:hover {
+  transform: scale(1.3);
+}
+
+@media (max-width: 800px) {
+  .section1 {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+
+  .section1 .certificatesImage {
+    width: 35rem;
+  }
+
+  .section2 {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
+  .section2 .certificatesImage {
+    width: 25rem;
+  }
+
+  .statistic .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 620px) {
+  .section1 {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
+  .section1 .certificatesImage {
+    width: 25rem;
+  }
+
+  .section2 {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  .section2 .certificatesImage {
+    width: 20rem;
+  }
+}

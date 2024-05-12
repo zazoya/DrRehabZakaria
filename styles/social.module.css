@@ -1,0 +1,37 @@
+.contact {
+  right: 2%;
+  bottom: 10%;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  transition: ease-in-out 250ms;
+  z-index: 2;
+}
+.contact a {
+  color: #fff;
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  position: relative;
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: ease-in-out 250ms;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background: var(--secondary-color);
+}
+
+.contact a:hover {
+  background: var(--main-color);
+}
+
+.lucide {
+  top: 45%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-out;
+}

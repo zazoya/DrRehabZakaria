@@ -1,0 +1,247 @@
+/* -------Main--------- */
+.btn {
+  color: white;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+}
+.btn:hover {
+  background-color: var(--main-color);
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 133rem;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8rem;
+  padding-left: 5rem;
+  padding-right: 3rem;
+}
+
+.consultant {
+  margin-top: -3rem;
+  margin-left: 2.5rem;
+}
+.consultant h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+.consultant__title {
+  font-size: 3.2rem;
+  font-weight: 520;
+  color: var(--secondary-color);
+}
+
+.consultant__desc {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+.doctor-info {
+  list-style-type: disc;
+  padding: 0;
+}
+
+.doctor-info li {
+  margin-bottom: 10px;
+  padding: 7px;
+  margin-left: 2rem;
+}
+
+.consultant__btn {
+  margin-top: 5rem;
+}
+
+.clinic {
+  margin-right: 0rem;
+}
+
+/* -------End of Main--------- */
+
+/* Start Services  */
+.special-heading {
+  color: #ebeced;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin: 0;
+}
+.special-heading + p {
+  margin: -30px 0 0;
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+}
+@media (max-width: 767px) {
+  .special-heading {
+    font-size: 60px;
+  }
+  .special-heading + p {
+    margin-top: -20px;
+  }
+}
+
+/* Start service */
+.service {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+  max-width: 100%;
+}
+.service-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 35.3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  border-radius: 3rem;
+  padding-bottom: 1.2rem;
+  background-color: white;
+  color: var(--secondary-color);
+  box-shadow: 0 2.5rem 5rem 2.5rem var(--color-lightblue);
+}
+
+.box:hover {
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.box__img {
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.box__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--main-color);
+}
+
+.box__desc {
+  font-size: 1.2rem;
+  font-weight: 550;
+  color: var(--secondary-color);
+  letter-spacing: 0.1rem;
+  line-height: 2.1rem;
+  width: 26rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.btn_box {
+  color: var(--secondary-color);
+  padding: 1rem 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+}
+/* End service */
+
+@media (max-width: 1400px) {
+  .service-content {
+    flex-direction: column;
+  }
+  .box {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 1200px) {
+  .consultant .title {
+    font-size: 2.2rem;
+  }
+  .consultant h3 {
+    font-size: 1.8rem;
+  }
+  .consultant ul {
+    margin-top: 1rem;
+  }
+  .consultant li {
+    font-size: 1.3rem;
+  }
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 760px) {
+  .consultant .title {
+    font-size: 2rem;
+  }
+  .consultant h3 {
+    font-size: 1.7rem;
+  }
+  .consultant ul {
+    margin-top: 1rem;
+  }
+  .consultant li {
+    font-size: 1.2rem;
+  }
+
+  .main {
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .clinic {
+    margin-bottom: 2.5rem;
+  }
+  .clinic img {
+    width: 90%;
+  }
+}
+@media (max-width: 420px) {
+  .consultant {
+    margin-left: -3rem;
+  }
+  .consultant .title {
+    font-size: 1.8rem;
+  }
+  .consultant h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 350px) {
+  .consultant .title {
+    font-size: 1.3rem;
+  }
+}

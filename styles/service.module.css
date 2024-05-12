@@ -1,0 +1,139 @@
+.section1 {
+  margin-top: 2rem;
+  background-color: white;
+}
+.section1 img {
+  width: 100%;
+}
+.section1 div {
+  background: var(--main-color);
+  height: 1rem;
+  margin-top: -5px;
+}
+
+.section1 ul {
+  text-align: center;
+  list-style-type: none;
+  padding-bottom: 5rem;
+  /* width: max-content; */
+  margin: auto;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.section1 li {
+  margin-bottom: 10px;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  background-color: var(--section-background);
+}
+
+.special-heading {
+  color: #ebeced;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin: 0;
+}
+.special-heading + p {
+  margin: -30px 0 0;
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+}
+@media (max-width: 767px) {
+  .special-heading {
+    font-size: 60px;
+  }
+  .special-heading + p {
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 925px) {
+  .section1 h2 {
+    font-size: 3rem;
+  }
+  .section1 ul {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .section1 li {
+    margin-bottom: 5px;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+  }
+}
+
+.service-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: var(--section-background);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 35.3rem;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+  margin-right: 5rem;
+  border-radius: 3rem;
+  padding-bottom: 1.2rem;
+  background-color: white;
+  color: var(--secondary-color);
+  box-shadow: 0 2.5rem 5rem 2.5rem var(--color-lightblue);
+}
+
+.box:hover {
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.box__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--main-color);
+}
+
+.box__desc {
+  font-size: 1.2rem;
+  font-weight: 550;
+  color: var(--secondary-color);
+  letter-spacing: 0.1rem;
+  line-height: 2.1rem;
+  width: 26rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+  .box {
+    width: 25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .box__title {
+    font-size: 1.3rem;
+  }
+
+  .box__desc {
+    font-size: 1rem;
+    width: 18rem;
+  }
+}
